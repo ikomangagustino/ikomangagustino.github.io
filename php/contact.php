@@ -29,9 +29,9 @@ if(trim($comments) == '') {
 	exit();
 }
 
-if(get_magic_quotes_gpc()) {
-	$comments = stripslashes($comments);
-}
+//if(get_magic_quotes_gpc()) {
+//	$comments = stripslashes($comments);
+//}
 
 
 // Configuration option.
@@ -73,7 +73,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
 	echo "<h3>Email Sent Successfully.</h3>";
-	echo "<p class='text-muted'>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
+	echo "<p class='text-muted'>Thank you <strong>$name</strong>, your message has been send to me.</p>";
 	echo "</div>";
 	echo "</fieldset>";
 

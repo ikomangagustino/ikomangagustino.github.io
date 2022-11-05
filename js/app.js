@@ -1,5 +1,4 @@
-/* Theme Name: Zoovara - Personal Template
-   Author: Mannat-themes
+/* Author: I Komang Agustino
    Version: 1.0.0
    File Description:App JS file of the template
 */
@@ -15,7 +14,7 @@
         MainApp.prototype.initCounter = function () {
             var a = 0;
             $(window).scroll(function() {
-                var oTop = $('#counter').offset().top - window.innerHeight;
+                var oTop = $('#counter').offset().top-window.innerHeight;
                 if (a == 0 && $(window).scrollTop() > oTop) {
                     $('.counter-value').each(function() {
                         var $this = $(this),
